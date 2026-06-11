@@ -1,0 +1,89 @@
+<app-navbar></app-navbar>
+
+<div class="home-background py-5">
+
+  <main class="container event-create-container">
+
+    <div class="card event-create-card shadow-lg p-3">
+
+      <div class="row g-4 align-items-center">
+
+        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+          <img
+            [src]="event.image ? event.image : ''"
+            class="img-fluid event-detail-img rounded"
+            alt="Previsualización del evento">
+        </div>
+
+        <div class="col-12 col-md-7 d-flex flex-column">
+
+          <div class="mb-3">
+            <label for="title" class="form-label text-purple">Título del evento</label>
+            <input type="text" id="title" class="form-control event-input" [(ngModel)]="event.title" name="title" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="image" class="form-label text-purple">URL de la imagen</label>
+            <input type="url" id="image" class="form-control event-input" [(ngModel)]="event.image" name="image" placeholder="https://...">
+          </div>
+
+           <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label for="date" class="form-label text-purple">Fecha</label>
+              <input type="date" id="date" class="form-control event-input"
+                     [(ngModel)]="dateString"
+                     name="date" required>
+            </div>
+            <div class="col-md-6">
+              <label for="time" class="form-label text-purple">Hora</label>
+              <input type="time" id="time" class="form-control event-input" [(ngModel)]="event.time" name="time" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="location" class="form-label text-purple">Ubicación</label>
+            <input type="text" id="location" class="form-control event-input" [(ngModel)]="event.location" name="location" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="description" class="form-label text-purple">Descripción</label>
+            <textarea id="description" rows="3" class="form-control event-input" [(ngModel)]="event.description" name="description"></textarea>
+          </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-4">
+              <label for="dresscode" class="form-label text-purple">Código de vestimenta</label>
+              <input type="text" id="dresscode" class="form-control event-input" [(ngModel)]="event.dresscode" name="dresscode">
+            </div>
+            <div class="col-md-4">
+              <label for="price" class="form-label text-purple">Precio</label>
+              <input type="text" id="price" class="form-control event-input" [(ngModel)]="event.price" name="price">
+            </div>
+            <div class="col-md-4">
+              <label for="tickets" class="form-label text-purple">Entradas disponibles</label>
+              <input type="number" id="tickets" class="form-control event-input" [(ngModel)]="event.tickets" name="tickets">
+            </div>
+          </div>
+
+          <div class="d-flex gap-2 mt-3">
+            <button
+              type="submit"
+              class="btn btn-outline-primary flex-fill"
+              (click)="isEditMode ? updateEvent() : addEvent()">
+              {{ isEditMode ? 'Actualizar Evento' : 'Crear Evento' }}
+            </button>
+
+            <a routerLink="/home" class="btn btn-outline-secondary flex-fill">Cancelar</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<app-footer></app-footer>

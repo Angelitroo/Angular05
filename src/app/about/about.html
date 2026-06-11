@@ -1,1 +1,139 @@
-<p>about works!</p>
+<app-navbar></app-navbar>
+
+<div class="home-background py-5">
+  <main class="container home-container">
+
+    <!-- Autor -->
+    <div class="card about-card mb-4 p-4">
+      <div class="row align-items-center g-3">
+        <div class="col-md-8">
+          <h2>Acerca del autor</h2>
+          <p><strong>Nombre:</strong> Ángel Medinilla Andrada</p>
+          <p><strong>Email:</strong> angel.medinilla.andrada.alu@iesjulioverne.es</p>
+          <p><strong>Ciclo / Asignatura:</strong> Desarrollo de Aplicaciones Web (DAW)</p>
+          <p><strong>Centro:</strong> I.E.S. Julio Verne</p>
+          <p>
+            Aplicación desarrollada como proyecto práctico utilizando Angular y Firebase,
+            centrada en la gestión de eventos nocturnos con control de roles y autenticación.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img
+            src="assets/media/fotoyo.png"
+            alt="Foto del autor"
+            class="img-fluid rounded about-author-img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Tecnologías -->
+    <div class="card about-card mb-4 p-4">
+      <h2>Herramientas y tecnologías utilizadas</h2>
+      <ul class="list-unstyled mb-0">
+        <li><strong>Angular:</strong> 20 (componentes standalone)</li>
+        <li><strong>TypeScript:</strong> 5.x</li>
+        <li><strong>HTML5 / CSS3</strong></li>
+        <li><strong>Bootstrap:</strong> 5.3</li>
+        <li><strong>Angular CLI</strong></li>
+        <li><strong>Firebase Authentication</strong></li>
+        <li><strong>Firestore Database</strong></li>
+        <li><strong>Firebase Hosting</strong></li>
+        <li><strong>WebStorm</strong></li>
+      </ul>
+    </div>
+
+    <!-- Funcionalidades -->
+    <div class="card about-card mb-4 p-4">
+      <h2>Funcionalidades implementadas</h2>
+      <ul class="list-unstyled mb-0">
+        <li>Autenticación de usuarios (login, registro, verificación de email)</li>
+        <li>Gestión de roles (usuario / administrador)</li>
+        <li>CRUD completo de eventos (crear, listar, actualizar y eliminar)</li>
+        <li>Protección de rutas mediante Guards</li>
+        <li>Persistencia de sesión mediante token</li>
+        <li>Confirmación mediante modales Bootstrap</li>
+      </ul>
+    </div>
+
+    <!-- Directivas -->
+    <div class="card about-card mb-4 p-4">
+      <h2>Directivas de Angular utilizadas</h2>
+      <div class="table-responsive">
+        <table class="table table-dark table-bordered mb-0">
+          <thead class="table-secondary">
+          <tr>
+            <th>Directiva</th>
+            <th>Tipo</th>
+            <th>Uso</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>*ngFor</td>
+            <td>Estructural</td>
+            <td>Listado dinámico de eventos</td>
+          </tr>
+          <tr>
+            <td>*ngIf</td>
+            <td>Estructural</td>
+            <td>Control de visibilidad por rol</td>
+          </tr>
+          <tr>
+            <td>[(ngModel)]</td>
+            <td>Bidireccional</td>
+            <td>Formularios de creación y edición</td>
+          </tr>
+          <tr>
+            <td>[routerLink]</td>
+            <td>Atributo</td>
+            <td>Navegación entre vistas</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Cuentas -->
+    <div class="card about-card mb-4 p-4">
+      <h2>Cuentas de prueba</h2>
+      <div class="table-responsive">
+        <table class="table table-dark table-bordered mb-0">
+          <thead class="table-secondary">
+          <tr>
+            <th>Email</th>
+            <th>Contraseña</th>
+            <th>Rol</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>admin@vibelist.com</td>
+            <td>Hola12345</td>
+            <td>Administrador</td>
+          </tr>
+          <tr>
+            <td>user@vibelist.com</td>
+            <td>Hola12345</td>
+            <td>Usuario</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bibliografía -->
+    <div class="card about-card mb-4 p-4">
+      <h2>Bibliografía y recursos</h2>
+      <ul class="list-unstyled mb-0">
+        <li>Canal Youtube Tech Design Pilot <a href="https://www.youtube.com/@TechDesignPilot">(Firebase general)</a></li>
+        <li>Canal Youtube Amit Shukla <a href="https://www.youtube.com/@Amit.Shukla">(AuthGuard)</a></li>
+        <li>Canal Youtube Code Logic <a href="https://www.youtube.com/@CodeLogicByPrajyot">(Firebase compact)</a></li>
+        <li>Apuntes proporcionados por el profesor</li>
+        <li>Github <a href="https://github.com/Angelitroo?tab=repositories">(Antguos proyectos)</a></li>
+      </ul>
+    </div>
+
+  </main>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,29 @@
+.home-background {
+  background-color: rgba(0, 0, 0, 0.85);
+  min-height: calc(100vh - 130px);
+}
+
+.about-card {
+  background-color: rgba(0, 0, 0, 0.96);
+  border: 1px solid #9c47ed;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(156, 71, 237, 0.25);
+}
+
+.about-card h2 {
+  color: #c58cff;
+  margin-bottom: 15px;
+}
+
+.about-card ul li {
+  margin-bottom: 8px;
+}
+
+.about-author-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #9c47ed;
+}

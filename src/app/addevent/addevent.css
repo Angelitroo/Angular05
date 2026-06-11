@@ -1,0 +1,68 @@
+.home-background {
+  background-color: rgba(0, 0, 0, 0.85);
+  min-height: calc(100vh - 130px);
+  padding: 40px 0;
+  color: #fff;
+}
+.event-create-card {
+  background-color: #0f0f0f;
+  border: 1px solid #9c47ed;
+  border-radius: 12px;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(156,71,237,0.3);
+  min-height: 450px;
+}
+
+.event-detail-img {
+  height: 100%;
+  width: 100%;
+  min-height: 200px;
+  max-height: 600px;
+  max-width: 500px;
+  object-fit: cover;
+  border: 1px solid #9c47ed;
+  box-shadow: 0 4px 12px rgba(156,71,237,0.3);
+  transition: transform 0.3s;
+}
+
+.event-detail-img:hover {
+  transform: scale(1.03);
+}
+
+.event-input {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #fff;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+.event-input:focus {
+  border-color: #9c47ed;
+  box-shadow: 0 0 6px rgba(156,71,237,0.5);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #9c47ed;
+  --bs-btn-border-color: #9c47ed;
+  --bs-btn-hover-bg: #9c47ed;
+  --bs-btn-hover-border-color: #9c47ed;
+  --bs-btn-hover-color: #000;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #cfa9ff;
+  --bs-btn-border-color: #cfa9ff;
+  --bs-btn-hover-bg: #cfa9ff;
+  --bs-btn-hover-border-color: #cfa9ff;
+  --bs-btn-hover-color: #000;
+}
+
+.text-purple {
+  color: #9c47ed;
+}
